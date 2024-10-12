@@ -1,26 +1,35 @@
 import React from "react";
-import { Container,Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
+
 const Skills = ({ data }) => {
   return (
-    <Container style={{fontSize: "1.2rem"}}>
-      <h1 style={{ textDecoration: "underline" }}>Skills</h1>
-      <Table striped bordered hover>
+    <Container style={{ fontSize: "1.1rem" }}>
+      <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>Skills</h1>
+      <Table 
+        striped 
+        bordered 
+        hover 
+        style={{
+          borderColor: "#212e3a",
+          backgroundColor: "#f0f4f8", // Light background for contrast
+        }}
+      >
         <thead>
-          <tr>
+          <tr style={{ backgroundColor: "#114b5f", color: "#ffffff" }}>
             <th>Skill</th>
-            <th>Year(s) Of Experience</th>
+            <th>Experience</th>
           </tr>
         </thead>
-        {data.map(({ skillname, yearsOfExperience }) => {
-          return (
-            <tbody>
-              <tr>
+        <tbody>
+          {data.map(({ skillname, yearsOfExperience }, index) => {
+            return (
+              <tr key={index}>
                 <td>{skillname}</td>
                 <td>{yearsOfExperience}</td>
               </tr>
-            </tbody>
-          );
-        })}
+            );
+          })}
+        </tbody>
       </Table>
     </Container>
   );

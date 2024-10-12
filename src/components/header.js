@@ -1,33 +1,31 @@
-//create a header component that will be used in the app
-//this component will be used in the app.js file
-
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container style={{fontSize: "1.2rem"}}>
-        <Navbar.Brand>React-Resume</Navbar.Brand>
+    <Navbar style={{ backgroundColor: "#212e3a", marginBottom:"1rem"}} expand="lg">
+      <Container style={{ fontSize: "1.2rem" }}>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <LinkContainer to="/">
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link className="text-white">Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/employment">
-              <Nav.Link>Employment</Nav.Link>
+              <Nav.Link className="text-white">Employment</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/education">
-              <Nav.Link>Education</Nav.Link>
+              <Nav.Link className="text-white">Education</Nav.Link>
             </LinkContainer>
-            {/* //TODO: add skills and reference links */}
             <LinkContainer to="/skills">
-              <Nav.Link>Skills</Nav.Link>
+              <Nav.Link className="text-white">Skills</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/projects">
+              <Nav.Link className="text-white">Projects</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/references">
-              <Nav.Link>References</Nav.Link>
+              <Nav.Link className="text-white">References</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

@@ -1,12 +1,20 @@
+import IMG1 from "../img/adams-corner.png";
+import IMG2 from "../img/clothing.png";
+import IMG3 from "../img/kanban.png";
+import IMG4 from "../img/paint-clone.png";
+import IMG5 from "../img/countdown.png";
+import IMG6 from "../img/quotegen.png";
+
 const resumeData = {
   name: "Adam Abdulkadir",
   linkedinId: "https://www.linkedin.com/in/adam-abdulkadir/",
   address: "Gainesvile, Virginia",
   phone: "703-364-8616",
   email: "adama1862@outlook.com",
+  github: "https://github.com/aabdulk862",
   role: "Software Engineer",
   roleDescription:
-    "I am a Software Developer who is equipped with a diverse programming skill-set. Proficient in various platforms, languages, and embedded systems. Experienced with cutting-edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
+    "Skilled Software Engineer with experience in designing secure, scalable cloud infrastructure and CI/CD pipelines. Proven expertise in AWS and Azure platforms, with a focus on automating processes, integrating security throughout the development lifecycle, and optimizing application performance. In addition to cloud engineering, I bring strong experience in full-stack development, building both front-end and back-end solutions using JavaScript, React, Java, and more. My ability to collaborate with cross-functional teams, manage source control systems, and work with CI/CD workflows in GitHub and GitLab enables me to deliver robust, high-performance applications across a range of industries.",
   education: [
     {
       schoolName: "George Mason University",
@@ -27,28 +35,40 @@ const resumeData = {
   ],
   work: [
     {
-      companyName: "Freelance",
-      role: "Web Developer",
+      companyName: "Revature",
+      role: "Software Engineer",
       summary:
-        "Wrote well-designed, testable, efficient code by using web development best practices. Created basic website layouts and user interfaces with HTML and CSS. Worked with stakeholders to gather and refine specifications and requirements based on technical needs.",
-      monthOfStarting: "Jan",
-      yearOfStarting: "2022",
-      monthOfLeaving: "",
-      yearOfLeaving: "",
-      achievements: "",
-      presentEmployer: true,
-    },
-    {
-      companyName: "George Mason University",
-      role: "Project Team Lead",
-      summary:
-        "Chosen as the leader of our group for the IT 343 - Project Management final course project. Responsible for communicating project objectives to the professor and the team members. Responsible for ensuring that all project goals and deliverables are completed on time using the highest quality processes",
-      monthOfStarting: "Sep",
-      yearOfStarting: "2022",
-      monthOfLeaving: "Dec",
-      yearOfLeaving: "2022",
+        "Completed an intensive 11-week full-stack pre-employment training program focused on Java, Javelin, SQL, Git, and Spring. Leveraged Java APIs to write algorithms to solve various challenges and problem sets. Developed a backend for a social media app, managing user accounts and messages, including registration, login, message creation, updates, deletions, and retrieval by user or message ID. Gained hands-on experience with Azure Active Directory, automation tools, command-line interface (CLI), and Azure DevOps, contributing to streamlined project workflows. Worked with AWS and Azure core platforms (compute, storage, networking) to support cloud applications",
+      monthOfStarting: "August",
+      yearOfStarting: "2023",
+      monthOfLeaving: "May",
+      yearOfLeaving: "2023",
       achievements: "",
       presentEmployer: false,
+    },
+    {
+      companyName: "GAMEC",
+      role: "Web Developer",
+      summary:
+        "Spearheaded the design and development of the official website for the Global Association of Muslim Eritrean Communities (GAMEC), a nonprofit organization. Managed website updates, maintenance, and troubleshooting to ensure optimal performance and security. Evaluated emerging technologies and trends in web development and digital communication to recommend innovative solutions for GAMEC's online presence.",
+      monthOfStarting: "August",
+      yearOfStarting: "2023",
+      monthOfLeaving: "May",
+      yearOfLeaving: "2023",
+      achievements: "",
+      presentEmployer: false,
+    },
+    {
+      companyName: "Crocodile Solutions",
+      role: "Frontend Developer Intern",
+      summary:
+        "Upgraded legacy applications for a leading legal software company, significantly enhancing performance and user experience. Developed efficient and responsive single-page applications (SPAs) utilizing advanced front-end technologies, including HTML, CSS, React, and Next.js. Integrated back-end functionalities into front-end applications through seamless collaboration with RESTful web services.",
+      monthOfStarting: "April",
+      yearOfStarting: "2023",
+      monthOfLeaving: "July",
+      yearOfLeaving: "2023",
+      achievements: "",
+      presentEmployer: true,
     },
     {
       companyName: "Zero To Mastery Academy",
@@ -62,41 +82,79 @@ const resumeData = {
       achievements: "",
       presentEmployer: false,
     },
-    {
-      companyName: "DoorDash",
-      role: "Independent Contractor",
-      summary:
-        "Delivered goods and services to customers on time and in excellent condition. Communicate with customer to keep them up to date with their order. Make sure orders are complete before delivering it to customer.",
-      monthOfStarting: "May",
-      yearOfStarting: "2019",
-      monthOfLeaving: "Jan",
-      yearOfLeaving: "2022",
-      achievements: "",
-      presentEmployer: false,
-    },
-    {
-      companyName: "Walmart",
-      role: "Cap Team Associate",
-      summary:
-        "Responsible for Establishing and maintaining the accuracy of inventory for the Walmart warehouse facility. Binning and picking merchandise with the utilization of inventory management system, completing bin audits, working inventory exceptions, and correcting shelf capacities.",
-      monthOfStarting: "Jun",
-      yearOfStarting: "2018",
-      monthOfLeaving: "May",
-      yearOfLeaving: "2019",
-      achievements: "",
-      presentEmployer: false,
-    },
   ],
   skills: [
-    { skillname: "JavaScript", yearsOfExperience: 2 },
-    { skillname: "React", yearsOfExperience: 1 },
-    { skillname: "Node.js", yearsOfExperience: 1 },
+    { skillname: "JavaScript", yearsOfExperience: 4 },
+    { skillname: "React", yearsOfExperience: 2 },
+    { skillname: "Next.js", yearsOfExperience: 1 }, // Added Next.js
+    { skillname: "Node.js", yearsOfExperience: 2 },
+    { skillname: "Java", yearsOfExperience: 2 }, // Added Java
+    { skillname: "Javalin", yearsOfExperience: 1 }, // Added Javalin
     { skillname: "Python", yearsOfExperience: 2 },
     { skillname: "MySQL", yearsOfExperience: 2 },
+    { skillname: "PL/SQL", yearsOfExperience: 1 }, // Added PL/SQL
     { skillname: "MongoDB", yearsOfExperience: 1 },
     { skillname: "HTML", yearsOfExperience: 4 },
     { skillname: "CSS", yearsOfExperience: 4 },
+    { skillname: "GraphQL", yearsOfExperience: 1 }, // Added GraphQL
+    { skillname: "AWS", yearsOfExperience: 1 }, // Added AWS
+    { skillname: "Azure", yearsOfExperience: 1 }, // Added Azure
+    { skillname: "Git", yearsOfExperience: 2 }, // Added Git
+    { skillname: "Docker", yearsOfExperience: 1 }, // Added Docker
+    { skillname: "Azure DevOps", yearsOfExperience: 1 }, // Added Azure DevOps
   ],
+
+  projects: [
+    {
+      id: 1,
+      image: IMG1,
+      title:
+        "Restaurant management system that allows users to perform CRUD operations on the menu items. Built with React and Express.",
+      link: "https://github.com/aabdulk862/adams-corner",
+      demo: "https://adams-corner.netlify.app/",
+    },
+    {
+      id: 2,
+      image: IMG2,
+      title:
+        "Royal Clothing Outlet - Ecommerce site made with React, Redux, Stripe, Firebase.",
+      link: "https://github.com/aabdulk862/royal-clothing-outlet",
+      demo: "https://royal-clothing-outlet.netlify.app/",
+    },
+    {
+      id: 3,
+      image: IMG3,
+      title:
+        "Kanban Board - Project management tool designed to help visualize work.",
+      link: "https://github.com/aabdulk862/kanban-board",
+      demo: "https://aabdulk862.github.io/kanban-board/",
+    },
+    {
+      id: 4,
+      image: IMG4,
+      title:
+        "Paint Clone - Allows user save their work as an image and to local storage.",
+      link: "https://github.com/aabdulk862/paint-clone-js",
+      demo: "https://aabdulk862.github.io/paint-clone-js/",
+    },
+    {
+      id: 5,
+      image: IMG5,
+      title:
+        "Custom Countdown - Counts down the days, hours, minutes, and seconds to a given date.",
+      link: "https://github.com/aabdulk862/custom-countdown-app",
+      demo: "https://aabdulk862.github.io/custom-countdown-app/",
+    },
+    {
+      id: 6,
+      image: IMG6,
+      title:
+        "Quote Generator - Display a random quote from an api of quotes and tweet it to your followers.",
+      link: "https://github.com/aabdulk862/quote-generator",
+      demo: "https://aabdulk862.github.io/quote-generator/",
+    },
+  ],
+
   references: [
     {
       name: "Keyeriya Anwar",
@@ -109,6 +167,12 @@ const resumeData = {
       description: "Quality Assurance Tester",
       email: "",
       phone: "571-234-3760",
+    },
+    {
+      name: "Khalid Ibrahim",
+      description: "GAMEC",
+      email: "khlid1992suleman@gmail.com",
+      phone: "202-423-6162",
     },
   ],
 };
