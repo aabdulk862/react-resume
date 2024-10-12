@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import Security from "../img/security.png";
+import AWS from "../img/aws.png";
 function Contact({ data }) {
   return (
     <Container style={{ fontSize: "1.2rem" }}>
@@ -31,7 +32,18 @@ function Contact({ data }) {
             </a>
           </p>
           <p> &ensp;{data.roleDescription}</p>
-          <img src={Security} alt="security+" style={{ width: "15%", padding: "10px"}}/>
+          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+            <img
+              src={Security}
+              alt="Security+"
+              style={{ width: "15%", padding: "10px" }}
+            />
+            <img
+              src={AWS}
+              alt="AWS Solutions Architect"
+              style={{ width: "15%", padding: "10px" }}
+            />
+          </div>
         </Card>
       </div>
     </Container>

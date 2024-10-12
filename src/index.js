@@ -17,7 +17,6 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        {/* TODO: Replace All hard code values with data from resumeData.js */}
         <Route path="/" element={<Contact data={resumeData} />} />
         <Route path="/employment" element={<Employment data={resumeData.work} />} />
         <Route path="/education" element={<Education data = {resumeData.education} />} />

@@ -4,7 +4,7 @@ const resumeData = {
   address: "Gainesvile, Virginia",
   phone: "703-364-8616",
   email: "adama1862@outlook.com",
-  role: "Web Developer",
+  role: "Software Engineer",
   roleDescription:
     "I am a Software Developer who is equipped with a diverse programming skill-set. Proficient in various platforms, languages, and embedded systems. Experienced with cutting-edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
   education: [
