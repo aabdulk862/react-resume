@@ -20,19 +20,19 @@ const Education = ({ data }) => {
                 marginTop: "20px",
                 marginBottom: "20px",
                 padding: "20px",
-                border: "2px solid #212e3a",
+                border: "2px solid #005239",
                 borderRadius: "1.5rem",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                 backgroundColor: "#f0f4f8", // Lighter background color
-                color: "#212e3a", // Dark text color for contrast
+                color: "#000", // Dark text color for contrast
               }}
             >
-              <Card.Header style={{ fontWeight: "bold", fontSize: "1.5rem", backgroundColor: "#114b5f", color: "#ffffff" }}>
+              <Card.Header style={{ fontWeight: "bold", fontSize: "1.5rem", backgroundColor: "#005239", color: "#ffffff" }}>
                 {schoolName}
               </Card.Header>
               <Card.Body>
                 <Card.Title style={{ fontWeight: "bold" }}>{specialization}</Card.Title>
-                <Card.Subtitle className="mb-2" style={{ color: "#555555" }}>
+                <Card.Subtitle className="mb-2" style={{ color: "#000" }}>
                   {monthOfPassing} {yearOfPassing}
                 </Card.Subtitle>
                 <Card.Text style={{ paddingTop: "5px" }}>

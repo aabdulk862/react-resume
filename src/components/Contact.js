@@ -7,16 +7,18 @@ function Contact({ data }) {
   return (
     <Container style={{ fontSize: "1.2rem" }}>
       <div className="App">
-        <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>{data.name}'s Resume</h1>
-        <Card 
-          style={{ 
-            marginTop: "20px", 
-            padding: "20px", 
-            border: "2px solid #212e3a", 
-            borderRadius: "1.5rem", 
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", 
+        <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
+          {data.name}'s Resume
+        </h1>
+        <Card
+          style={{
+            marginTop: "20px",
+            padding: "20px",
+            border: "2px solid #212e3a",
+            borderRadius: "1.5rem",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             backgroundColor: "#f0f4f8", // Lighter background
-            color: "#212e3a" // Dark text color for contrast
+            color: "#212e3a", // Dark text color for contrast
           }}
         >
           <h3>{data.role}</h3>
@@ -45,12 +47,12 @@ function Contact({ data }) {
                   backgroundColor: "transparent",
                 }}
                 onMouseOver={(e) => {
-                  e.target.style.backgroundColor = "#e6f0fa"; 
-                  e.target.style.color = "#005582"; 
+                  e.target.style.backgroundColor = "#e6f0fa";
+                  e.target.style.color = "#005582";
                 }}
                 onMouseOut={(e) => {
-                  e.target.style.backgroundColor = "transparent"; 
-                  e.target.style.color = "#0073b1"; 
+                  e.target.style.backgroundColor = "transparent";
+                  e.target.style.color = "#0073b1";
                 }}
               >
                 www.linkedin.com/in/adam-abdulkadir/
@@ -71,12 +73,12 @@ function Contact({ data }) {
                   backgroundColor: "transparent",
                 }}
                 onMouseOver={(e) => {
-                  e.target.style.backgroundColor = "#f0f0f0"; 
-                  e.target.style.color = "#24292e"; 
+                  e.target.style.backgroundColor = "#f0f0f0";
+                  e.target.style.color = "#24292e";
                 }}
                 onMouseOut={(e) => {
-                  e.target.style.backgroundColor = "transparent"; 
-                  e.target.style.color = "#333"; 
+                  e.target.style.backgroundColor = "transparent";
+                  e.target.style.color = "#333";
                 }}
               >
                 https://github.com/aabdulk862
@@ -97,19 +99,18 @@ function Contact({ data }) {
                   backgroundColor: "transparent",
                 }}
                 onMouseOver={(e) => {
-                  e.target.style.backgroundColor = "#e1f5fe"; 
-                  e.target.style.color = "#0056a3"; 
+                  e.target.style.backgroundColor = "#e1f5fe";
+                  e.target.style.color = "#0056a3";
                 }}
                 onMouseOut={(e) => {
-                  e.target.style.backgroundColor = "transparent"; 
-                  e.target.style.color = "#0078d4"; 
+                  e.target.style.backgroundColor = "transparent";
+                  e.target.style.color = "#0078d4";
                 }}
               >
                 adama1862@outlook.com
               </a>
             </p>
           </div>
-
           <p
             style={{
               fontSize: "1.2rem",
@@ -125,6 +126,7 @@ function Contact({ data }) {
           >
             {data.roleDescription}
           </p>
+          <h3><u>Certifications</u>:</h3>
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <img
               src={Security}
