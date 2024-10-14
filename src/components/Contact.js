@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
 import Security from "../img/security.png";
 import AWS from "../img/aws.png";
 
 function Contact({ data }) {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Get the current count from localStorage
+    let count = localStorage.getItem("visitCount");
+    if (!count) {
+      count = 0;
+    }
+    // Increment the count and store it back in localStorage
+    const newCount = parseInt(count, 10) + 1;
+    localStorage.setItem("visitCount", newCount);
+    setVisitCount(newCount);
+  }, []);
+
   return (
     <Container style={{ fontSize: "1.2rem" }}>
       <div className="App">
         <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
           {data.name}'s Resume
         </h1>
+        <p>Page visited {visitCount} times</p>
         <Card
           style={{
             marginTop: "20px",
