@@ -3,6 +3,7 @@ import axios from "axios"; // Import axios to make API requests
 import { Container, Card } from "react-bootstrap";
 import Security from "../img/security.png";
 import AWS from "../img/aws.png";
+import Azure from "../img/fundamentals.png";
 
 function Contact({ data }) {
   const [visitCount, setVisitCount] = useState(0);
@@ -12,7 +13,7 @@ function Contact({ data }) {
     const fetchVisitCount = async () => {
       try {
         const response = await axios.get(
-          "https://getadamresume.azurewebsites.net/api/getVisitCount"
+          "http://localhost:7071/api/GetResumeCounter"
         );
         setVisitCount(response.data.count); // Assuming the response contains a `count` field
       } catch (error) {
@@ -157,6 +158,11 @@ function Contact({ data }) {
             />
             <img
               src={AWS}
+              alt="AWS Solutions Architect"
+              style={{ width: "15%", padding: "10px" }}
+            />
+            <img
+              src={Azure}
               alt="AWS Solutions Architect"
               style={{ width: "15%", padding: "10px" }}
             />
