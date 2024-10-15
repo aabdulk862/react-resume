@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios"; // Import axios to make API requests
 import { Container, Card } from "react-bootstrap";
 import Security from "../img/security.png";
 import AWS from "../img/aws.png";
@@ -7,15 +8,19 @@ function Contact({ data }) {
   const [visitCount, setVisitCount] = useState(0);
 
   useEffect(() => {
-    // Get the current count from localStorage
-    let count = localStorage.getItem("visitCount");
-    if (!count) {
-      count = 0;
-    }
-    // Increment the count and store it back in localStorage
-    const newCount = parseInt(count, 10) + 1;
-    localStorage.setItem("visitCount", newCount);
-    setVisitCount(newCount);
+    // Fetch the visit count from your Azure Function API
+    const fetchVisitCount = async () => {
+      try {
+        const response = await axios.get(
+          "https://getadamresume.azurewebsites.net/api/getVisitCount"
+        );
+        setVisitCount(response.data.count); // Assuming the response contains a `count` field
+      } catch (error) {
+        console.error("Error fetching visit count:", error);
+      }
+    };
+
+    fetchVisitCount();
   }, []);
 
   return (
@@ -24,7 +29,7 @@ function Contact({ data }) {
         <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
           {data.name}'s Resume
         </h1>
-        <p>Page visited {visitCount} times</p>
+        <p>Page visited {visitCount} times</p> {/* Display the visit count */}
         <Card
           style={{
             marginTop: "20px",
@@ -32,8 +37,8 @@ function Contact({ data }) {
             border: "2px solid #212e3a",
             borderRadius: "1.5rem",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-            backgroundColor: "#f0f4f8", // Lighter background
-            color: "#212e3a", // Dark text color for contrast
+            backgroundColor: "#f0f4f8",
+            color: "#212e3a",
           }}
         >
           <h3>{data.role}</h3>
@@ -141,7 +146,9 @@ function Contact({ data }) {
           >
             {data.roleDescription}
           </p>
-          <h3><u>Certifications</u>:</h3>
+          <h3>
+            <u>Certifications</u>:
+          </h3>
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <img
               src={Security}
