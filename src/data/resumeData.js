@@ -1,9 +1,9 @@
-import IMG1 from "../img/adams-corner.png";
-import IMG2 from "../img/clothing.png";
-import IMG3 from "../img/kanban.png";
-import IMG4 from "../img/paint-clone.png";
-import IMG5 from "../img/countdown.png";
-import IMG6 from "../img/quotegen.png";
+import IMG1 from "../img/ERS.png";
+import IMG2 from "../img/adams-corner.png";
+import IMG3 from "../img/clothing.png";
+import IMG4 from "../img/kanban.png";
+import IMG5 from "../img/paint-clone.png";
+import IMG6 from "../img/countdown.png";
 
 const resumeData = {
   name: "Adam Abdulkadir",
@@ -38,13 +38,13 @@ const resumeData = {
       companyName: "Revature",
       role: "Software Engineer",
       summary:
-        "Completed an intensive 11-week full-stack pre-employment training program focused on Java, Javelin, SQL, Git, and Spring. Leveraged Java APIs to write algorithms to solve various challenges and problem sets. Developed a backend for a social media app, managing user accounts and messages, including registration, login, message creation, updates, deletions, and retrieval by user or message ID. Gained hands-on experience with Azure Active Directory, automation tools, command-line interface (CLI), and Azure DevOps, contributing to streamlined project workflows. Worked with AWS and Azure core platforms (compute, storage, networking) to support cloud applications",
-      monthOfStarting: "August",
-      yearOfStarting: "2023",
-      monthOfLeaving: "May",
-      yearOfLeaving: "2023",
+        "Enrolled in an intensive, full-time training program in advanced full-stack development, mastering Java with Spring Boot, React, AWS, and Postgres to build scalable and dynamic web applications. Utilized AWS for cloud computing and managed version control with Git/GitHub. Developed a Java Full Stack Employee Reimbursement System (ERS) with React, Spring Boot, and Postgres, including reimbursement submissions, manager approval workflows, and secure authentication.",
+      monthOfStarting: "December",
+      yearOfStarting: "2022",
+      monthOfLeaving: "",
+      yearOfLeaving: "",
       achievements: "",
-      presentEmployer: false,
+      presentEmployer: true,
     },
     {
       companyName: "GAMEC",
@@ -53,8 +53,8 @@ const resumeData = {
         "Spearheaded the design and development of the official website for the Global Association of Muslim Eritrean Communities (GAMEC), a nonprofit organization. Managed website updates, maintenance, and troubleshooting to ensure optimal performance and security. Evaluated emerging technologies and trends in web development and digital communication to recommend innovative solutions for GAMEC's online presence.",
       monthOfStarting: "August",
       yearOfStarting: "2023",
-      monthOfLeaving: "May",
-      yearOfLeaving: "2023",
+      monthOfLeaving: "December",
+      yearOfLeaving: "2024",
       achievements: "",
       presentEmployer: false,
     },
@@ -109,49 +109,48 @@ const resumeData = {
       id: 1,
       image: IMG1,
       title:
+        "The Expense Reimbursement System manages the process of reimbursing employees for expenses incurred while on company time.",
+      link: "https://github.com/aabdulk862/Expense-Reimbursement-System",
+    },
+    {
+      id: 2,
+      image: IMG2,
+      title:
         "Restaurant management system that allows users to perform CRUD operations on the menu items. Built with React and Express.",
       link: "https://github.com/aabdulk862/adams-corner",
       demo: "https://adams-corner.netlify.app/",
     },
     {
-      id: 2,
-      image: IMG2,
+      id: 3,
+      image: IMG3,
       title:
         "Royal Clothing Outlet - Ecommerce site made with React, Redux, Stripe, Firebase.",
       link: "https://github.com/aabdulk862/royal-clothing-outlet",
       demo: "https://royal-clothing-outlet.netlify.app/",
     },
     {
-      id: 3,
-      image: IMG3,
+      id: 4,
+      image: IMG4,
       title:
         "Kanban Board - Project management tool designed to help visualize work.",
       link: "https://github.com/aabdulk862/kanban-board",
       demo: "https://aabdulk862.github.io/kanban-board/",
     },
     {
-      id: 4,
-      image: IMG4,
+      id: 5,
+      image: IMG5,
       title:
         "Paint Clone - Allows user save their work as an image and to local storage.",
       link: "https://github.com/aabdulk862/paint-clone-js",
       demo: "https://aabdulk862.github.io/paint-clone-js/",
     },
     {
-      id: 5,
-      image: IMG5,
+      id: 6,
+      image: IMG6,
       title:
         "Custom Countdown - Counts down the days, hours, minutes, and seconds to a given date.",
       link: "https://github.com/aabdulk862/custom-countdown-app",
       demo: "https://aabdulk862.github.io/custom-countdown-app/",
-    },
-    {
-      id: 6,
-      image: IMG6,
-      title:
-        "Quote Generator - Display a random quote from an api of quotes and tweet it to your followers.",
-      link: "https://github.com/aabdulk862/quote-generator",
-      demo: "https://aabdulk862.github.io/quote-generator/",
     },
   ],
 

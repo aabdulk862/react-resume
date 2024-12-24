@@ -1,36 +1,19 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios"; // Import axios to make API requests
+import React from "react";
 import { Container, Card } from "react-bootstrap";
 import Security from "../img/security.png";
 import AWS from "../img/aws.png";
 import Azure from "../img/fundamentals.png";
 
 function Contact({ data }) {
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    // Fetch the visit count from your Azure Function API
-    const fetchVisitCount = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:7071/api/GetResumeCounter"
-        );
-        setVisitCount(response.data.count); // Assuming the response contains a `count` field
-      } catch (error) {
-        console.error("Error fetching visit count:", error);
-      }
-    };
-
-    fetchVisitCount();
-  }, []);
 
   return (
-    <Container style={{ fontSize: "1.2rem" }}>
+    <Container style={{ fontSize: "1.2rem", marginBottom: "5rem" }}>
       <div className="App">
         <h1 style={{ textDecoration: "underline", color: "#114b5f" }}>
           {data.name}'s Resume
         </h1>
-        <p>Page visited {visitCount} times</p> {/* Display the visit count */}
+       
+        {/* Display the visit count */}
         <Card
           style={{
             marginTop: "20px",
@@ -40,6 +23,7 @@ function Contact({ data }) {
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             backgroundColor: "#f0f4f8",
             color: "#212e3a",
+            overflow: "hidden",
           }}
         >
           <h3>{data.role}</h3>
@@ -150,21 +134,29 @@ function Contact({ data }) {
           <h3>
             <u>Certifications</u>:
           </h3>
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap", // Allow wrapping on smaller screens
+              justifyContent: "flex-start",
+              overflow: "hidden",
+              margin: "0 -10px",
+            }}
+          >
             <img
               src={Security}
               alt="Security+"
-              style={{ width: "15%", padding: "10px" }}
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
             <img
               src={AWS}
               alt="AWS Solutions Architect"
-              style={{ width: "15%", padding: "10px" }}
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
             <img
               src={Azure}
-              alt="AWS Solutions Architect"
-              style={{ width: "15%", padding: "10px" }}
+              alt="Azure Fundamentals"
+              style={{ width: "100%", maxWidth: "150px", padding: "10px", flexShrink: 0 }}
             />
           </div>
         </Card>
